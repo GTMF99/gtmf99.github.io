@@ -1,12 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTMF99's Portfolio</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GTMF99's portfolio</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cairo&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<section class="hero is-dark is-fullheight" id="inicio">
+			<div class="hero-head">
+				<header class="navbar">
+					<div class="container" role="navigation" aria-label="main navigation">
+						<div class="navbar-brand">
+							<a href="https://GTMF99.github.io" class="navbar-item logo">
+								<img src="img/logo.png" alt="logo">
+							</a>
+							<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="primaryNavbar">
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+							</a>
+						</div>
+						<div id="primaryNavbar" class="navbar-menu">
+							<div class="navbar-end">
+								<a class="navbar-item is-hoverable" href="#inicio">Inicio</a>
+								<a class="navbar-item is-hoverable" href="#habilidades">Habilidades</a>
+								<a class="navbar-item is-hoverable" href="#proyectos">Proyectos</a>
+								<a class="navbar-item is-hoverable" href="https://www.reddit.com/user/PoisonedShiitake/">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+											<path d="M283.2 345.5c2.7 2.7 2.7 6.8 0 9.2-24.5 24.5-93.8 24.6-118.4 0-2.7-2.4-2.7-6.5 0-9.2 2.4-2.4 6.5-2.4 8.9 0 18.7 19.2 81 19.6 100.5 0 2.4-2.3 6.6-2.3 9 0zm-91.3-53.8c0-14.9-11.9-26.8-26.5-26.8-14.9 0-26.8 11.9-26.8 26.8 0 14.6 11.9 26.5 26.8 26.5 14.6 0 26.5-11.9 26.5-26.5zm90.7-26.8c-14.6 0-26.5 11.9-26.5 26.8 0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-11.9 26.8-26.5 0-14.9-11.9-26.8-26.8-26.8zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-99.7 140.6c-10.1 0-19 4.2-25.6 10.7-24.1-16.7-56.5-27.4-92.5-28.6l18.7-84.2 59.5 13.4c0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-12.2 26.8-26.8 0-14.6-11.9-26.8-26.8-26.8-10.4 0-19.3 6.2-23.8 14.9l-65.7-14.6c-3.3-.9-6.5 1.5-7.4 4.8l-20.5 92.8c-35.7 1.5-67.8 12.2-91.9 28.9-6.5-6.8-15.8-11-25.9-11-37.5 0-49.8 50.4-15.5 67.5-1.2 5.4-1.8 11-1.8 16.7 0 56.5 63.7 102.3 141.9 102.3 78.5 0 142.2-45.8 142.2-102.3 0-5.7-.6-11.6-2.1-17 33.6-17.2 21.2-67.2-16.1-67.2z"/>
+										</svg>
+									</span>
+								</a>
+								<a class="navbar-item is-hoverable" href="https://github.com/GTMF99/">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+											<path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/>
+										</svg>
+									</span>	
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<figure class="image is-256x256 is-inline-block is-round-corners">
+						<img src="img/profile-photo.png" alt="profile-photo">
+					</figure>
+					<h1 class="title pt-2">Gabriel Méndez</h1>
+					<h2 class="subtitle pt-1">Desarrollador</h2>
+				</div>
+			</div>
+		</section>
+		<section class="section is-fullheight" id="habilidades">
+			<div class="container">
+				<h3 class="title has-text-centered pb-2 is-uppercase has-text-primary">Habilidades</h3>
+				<div class="columns is-vcentered">
+					<div class="column">
+						<div class="box">
+							<canvas id="skillRadarChart"></canvas>
+						</div>
+					</div>
+					<div class="column">
+						<div class="tile is-ancestor">
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">JAVA</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">KOTLIN</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">XML</p>
+								</article>
+							</div>
+							<div class="tile is-parent is-4">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">JAVASCRIPT</p>
+								</article>
+							</div>
+						</div>
+						<div class="tile is-ancestor">
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">HTML</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">CSS</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">C/C++</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">C#</p>
+								</article>
+							</div>
+						</div>
+						<div class="tile is-ancestor">
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">PYTHON</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">LINUX</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">PHP</p>
+								</article>
+							</div>
+						</div>
+						<div class="tile is-ancestor">
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">BASH</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">MS WINDOWS</p>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child box">
+									<p class="subtitle has-text-centered">WORDPRESS</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section is-fullheight" id="proyectos">
+			<div class="container">
+				<h3 class="title has-text-centered pb-2 is-uppercase has-text-primary">Proyectos</h3>
+				<div class="columns">
+					<div class="column">
+						<figure class="image is-round-corners">
+							<img src="img/project1.jpg" alt="project1">
+							<div class="overlay is-flex is-align-items-center is-justify-content-center">
+								<div class="overlay-content has-text-centered">
+									<p class="title">Duinomote</p>
+									<button class="button is-primary modal-trigger1">Leer más</button>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="column">
+						<figure class="image is-round-corners"> 
+							<img src="img/project2.jpg" alt="project2">
+							<div class="overlay is-flex is-align-items-center is-justify-content-center">
+								<div class="overlay-content has-text-centered">
+									<p class="title">Sist. Inventario</p>
+									<button class="button is-primary modal-trigger2">Leer más</button>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="column">
+						<figure class="image is-round-corners">
+							<img src="img/project3.png" alt="project3">
+							<div class="overlay is-flex is-align-items-center is-justify-content-center">
+								<div class="overlay-content has-text-centered">
+									<p class="title">Sitio Web: Clínica del Dolor y Cuidados Paliativos con Wordpress</p>
+									<button class="button is-primary modal-trigger3">Leer más</button>
+								</div>
+							</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer has-background-dark has-text-centered">
+			<h1 class="subtitle is-5 has-text-light">Hecho con <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></span> y mucho <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span>.</h1>
+			<a class="button is-outlined is-primary is-large" href="cv/cv.pdf" download="cv.pdf">Descargar CV</a>
+		</footer>
+		<!-- Modals -->
+		<div class="modal modal1">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">DuinoMote</p>
+					<button class="delete" aria-label="close"></button>
+				</header> 
+				<section class="modal-card-body has-text-justified">
+					<p>DuinoMote es una aplicacion desarrollada en Java y XML para el sistema operativo móvil Android, donde se hace uso de herramientas como Room y el proyecto de código abierto: usb-serial-android para comunicarse con una placa de desarrollo Arduino precargada con un sketch capaz de captar y emitir señales de control a través de luz infrarroja.</p>
+					<p>La misma permite al usuario crear controles virtuales, y, a su vez, botones virtuales para estos, con el fin de ofrecer flexibilidad al operador para personalizar su control remoto virtual.</p>
+				</section>
+				<footer class="modal-card-foot">
+					<a href="https://github.com/GTMF99/duinomote" class="button is-primary">Código fuente</a>
+				</footer>
+			</div>
+		</div>
+		<div class="modal modal2">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Sistema de Inventario</p>
+					<button class="delete" aria-label="close"></button>
+				</header> 
+				<section class="modal-card-body has-text-justified">
+					<p>El Sistema de Inventario realizado para la empresa Predictive Technologies, es un programa de escritorio enfocado a entornos Microsoft Windows y desarrollado en C# y utiliza Microsoft Access como motor de bases de datos.</p>
+					<p>El mismo fue utilizado para controlar el inventario de dicha empresa. Para ello, contaba con distintos modulos: Resumen de Inventario, Ajustes de Inventario, Articulos y Reportes.</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+		<div class="modal modal3">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Clínica del Dolor y Cuidados Paliativos</p>
+					<button class="delete" aria-label="close"></button>
+				</header> 
+				<section class="modal-card-body has-text-justified">
+					<p>Este sitio Web fue desarrollador para la Clínica del Dolor y Cuidados Paliativos ubicada en Ecuador, San Lorenzo, con el fin de proveer a los pacientes e interesados la informacion necesaria referente a los servicios ofrecidos por la clínica. La misma fue desarrollada con Wordpress para garantizar una sencilla administracion del sitio y del contenido del mismo.</p>
+				</section>
+				<footer class="modal-card-foot">
+					<a href="https://clinicadeldolorsanlorenzo.com" class="button is-primary">Visitar sitio</a>
+				</footer>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="js/menu-toggle.js"></script>
+	<script src="js/modal-trigger.js"></script>
+	<script src="js/main.js"></script>
 </html>

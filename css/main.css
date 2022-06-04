@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+	font-family: 'Cairo', sans-serif;
+}
+
+p, label, a, li {
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+#proyectos figure {
+	position: relative;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.overlay-content {
+	visibility: hidden;
+}
+
+.overlay:hover, .overlay:active {
+	box-shadow: inset 0px 0px 120px darkgrey;
+}
+
+.overlay:hover > .overlay-content, .overlay:active > .overlay-content {
+	visibility: visible;
+}
+
+.is-256x256 {
+	width: 256px;
+	height: 256px;
+}
+
+.is-round-corners img, .is-round-corners .overlay {
+	border-radius: 10px;
+}
+
+.logo img {
+	border-radius: 10%;
+}
+
+svg path {
+	fill: white;
+}
